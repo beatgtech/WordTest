@@ -13,6 +13,9 @@ public class WordTest {
         if(level == 0) {
             for (int i = 0; i < dictionary.length; i++) {
                 result.add(new StringBuilder(dictionary[i]));
+                if(mappedString.equals(dictionary[i].replaceAll(" ", ""))) {
+                    output.add(dictionary[i]);
+                }
             }
             return result;
         }

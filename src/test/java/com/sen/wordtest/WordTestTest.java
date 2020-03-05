@@ -26,6 +26,21 @@ public class WordTestTest {
     }
 
     @Test
+    public void testStage1_5() {
+        Assert.assertEquals("", WordTest.stage1Method("THISISATEST"));
+    }
+
+    @Test
+    public void testStage1_6() {
+        Assert.assertEquals("", WordTest.stage1Method("thisisatest"));
+    }
+
+    @Test
+    public void testStage1_7() {
+        Assert.assertEquals("i\n", WordTest.stage1Method("i"));
+    }
+
+    @Test
     public void testStage2_1() {
         Assert.assertEquals("", WordTest.stage2Method("asdfasd", new String[]{}));
     }
